@@ -1,0 +1,41 @@
+.galery-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galery-link:not(:last-child) {
+  margin-right: 8px;
+}
+
+.galery-button {
+  padding: 6px 22px;
+  border-radius: $--style-botton-radius;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62em;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background-color: #f5f4fa;
+  color: $--text-primary-color;
+  border: none;
+  transition: color $--timing-function,
+  background-color $--timing-function, box-shadow  $--timing-function;
+	&:hover,
+  &:focus {
+  color: $--background;
+  background-color: $--navigation;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+}
+
+.galery-button.active-btn {
+  color: $--background;
+  background-color: $--navigation;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}

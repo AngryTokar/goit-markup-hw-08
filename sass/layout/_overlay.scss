@@ -1,0 +1,13 @@
+.projeckt-top-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.55em;
+  letter-spacing: 0.03em;
+  transform: translateY(100%);
+  transition: transform $--timing-function;
+  color: $--background;
+  background-color: rgba(33, 150, 243, 0.9);
+}

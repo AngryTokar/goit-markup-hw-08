@@ -1,0 +1,42 @@
+.client-text {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.client .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  border: 1px solid $--fill-icons;
+  border-radius: $--style-botton-radius;
+  height: 92px;
+  color: $--fill-icons;
+  transition: color $--timing-function, border-color $--timing-function;
+	&:hover,
+  &:focus {
+  color: $--navigation;
+  border-color: $--navigation;;
+}
+}
+
+.logo-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+  transition: fill $--timing-function;
+	&:hover,
+  &:focus {
+  fill:  $--navigation;;
+}
+}
+

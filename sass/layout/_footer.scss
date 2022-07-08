@@ -1,0 +1,59 @@
+.footer {
+  padding-top: 60px;
+	padding-bottom: 60px;
+  background-color: $--acent;
+}
+
+.footer-container {
+  display: flex;
+	align-items: baseline;
+}
+
+.adress .link {
+  display: block;
+	&.link:not(:last-child) {
+		margin-bottom: 9px;
+	}
+}
+
+
+
+.social-footer {
+  width: 206px;
+	margin-left: 70px;
+}
+
+.text-footer-sicial {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  color: $--background;
+}
+
+.social-list.list {
+  display: flex;
+  align-items: center;
+
+}
+
+.social-icon-footer {
+  fill: $--background;
+}
+
+.social-button-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $--background-social-footer;
+  transition: background-color $--timing-function;
+	&:hover,
+  &:focus {
+  background-color: $--navigation;
+}
+}
+

@@ -1,0 +1,83 @@
+/* Наши преимущества */
+
+.list.benefits__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.benefits {
+  padding-bottom: 0;
+}
+
+.benefits__icon-wrapper{
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $--background-team-color;
+  border-radius: $--style-botton-radius;
+}
+
+.benefits__item {
+  width: 270px;
+}
+
+.benefits__list {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 1.71em;
+  letter-spacing: 0.03em;
+  color: $--text-regular;
+}
+
+.chapter-work {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.chapter-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chapter-item > img {
+  width: 370px;
+  display: block;
+}
+.chapter-foto {
+  position: relative;
+}
+
+.chapter-overlal {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  min-width: 370px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.overlay-text {
+  font-weight: 700;
+  line-height: 1.14em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $--background;
+}

@@ -1,0 +1,17 @@
+/* Контакты */
+
+.contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  color: $--text-regular;
+  transition: color $--timing-function;
+	&:hover,
+  &:focus {
+  color: $--navigation;
+}
+}
+

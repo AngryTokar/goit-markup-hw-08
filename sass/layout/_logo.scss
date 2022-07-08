@@ -1,0 +1,17 @@
+/* Лого */
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19em;
+  letter-spacing: 0.03em;
+  color: $--navigation;
+}
+
+.logo__header {
+  color: $--text-primary-color;
+}
+
+.logo-footer {
+  color: $--background;
+}

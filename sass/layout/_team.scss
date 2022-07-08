@@ -1,0 +1,47 @@
+.section.team {
+  background-color: $--background-team-color;
+}
+
+.chapter-team {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-item {
+  width: 270px;
+  background-color: $--background;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-wrapper {
+  padding: 30px 16px;
+}
+
+.team-member {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18em;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work-name {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.18em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $--text-regular;
+}

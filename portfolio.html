@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/main.min.css" />
+	<title>WebStudio</title>
+</head>
+
+<body>
+	<!-- Хеадер -->
+	<header class="header">
+		<div class="container header__container">
+			<nav class="header__nav">
+				<a class="logo link" href="./index.html">Web<span class="logo__header">Studio</span></a>
+				<ul class="list header__list">
+					<li class="header__item"><a href="./index.html" class="link header-menu">Студия</a></li>
+					<li class="header__item"><a href="./portfolio.html" class="link header-menu current-link">Портфолио</a></li>
+					<li class="header__item"><a href="./index.html" class="link header-menu">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="list contacts">
+				<li class="contacts-item">
+					<a class="header contacts link" href="mailto:info@example.com">
+						<svg class="contacts__icon" Width="16" Height="12">
+							<use href="./images/icons.svg#icon-envelope"></use>
+						</svg>info@example.com
+					</a>
+				</li>
+				<li class="contacts-item">
+					<a class="header contacts link" href="tel:+380991111111">
+						<svg class="contacts__icon" Width="10" Height="16">
+							<use href="./images/icons.svg#icon-smartphone"></use>
+						</svg>+38 099 111 11 11
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- Мэин -->
+	<main class="portfolio-main">
+		<!-- Фильтр галереи -->
+		<section class="section projeckt">
+			<div class="container">
+				<h1 class="visually-hidden">Навигация по галереи проєктов</h1>
+				<ul class="galery-list list">
+					<li class="galery-link"><button type="button" class="galery-button active-btn">Все</button></li>
+					<li class="galery-link"><button type="button" class="galery-button ">Веб-сайты</button></li>
+					<li class="galery-link"><button type="button" class="galery-button ">Приложения</button></li>
+					<li class="galery-link"><button type="button" class="galery-button ">Дизайн</button></li>
+					<li class="galery-link"><button type="button" class="galery-button ">Маркетинг</button></li>
+				</ul>
+				<!-- Примеры проэктов -->
+				<h2 class="visually-hidden">Наши Проэкты</h2>
+				<ul class="projeckt-list list">
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img src="./images/projeckt_examples/tehnokriyak.jpg" alt="Ноутбук с портфолио" width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Технокряк</h3>
+							<p class="projeckt-description">Веб-сайт</p>
+						</div>
+					</li>
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img src="./images/projeckt_examples/new_orlean.jpg" alt="Постер с баскетболистами" width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Постер New Orlean vs Golden Star</h3>
+							<p class="projeckt-description">Дизайн</p>
+						</div>
+					</li>
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img src="./images/projeckt_examples/seafood.jpg" alt="Лого ресторана Seafood" width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Ресторан Seafood</h3>
+							<p class="projeckt-description">Приложение</p>
+						</div>
+					</li>
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img class="projeckt-foto" src="./images//projeckt_examples/headphones.jpg" alt="Черные наушники"
+								width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Проект Prime</h3>
+							<p class="projeckt-description">Маркетинг</p>
+						</div>
+					</li>
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img class="projeckt-foto" src="./images/projeckt_examples/boxes.jpg" alt="Коробочки" width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Проект Boxes</h3>
+							<p class="projeckt-description">Приложение</p>
+						</div>
+					</li>
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img class="projeckt-foto" src="./images/projeckt_examples/monitor.jpg"
+								alt="Монитор с открытым сайтом на экране" width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Inspiration has no Borders</h3>
+							<p class="projeckt-description">Веб-сайт</p>
+						</div>
+					</li>
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img class="projeckt-foto" src="./images/projeckt_examples/buklets.jpg" alt="Буклет" width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Издание Limited Edition</h3>
+							<p class="projeckt-description">Дизайн</p>
+						</div>
+					</li>
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img class="projeckt-foto" src="./images/projeckt_examples/tags.jpg" alt="Бирка с английским алфовитом"
+								width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Проект LAB</h3>
+							<p class="projeckt-description">Маркетинг</p>
+						</div>
+					</li>
+					<li class="projeckt-link">
+						<div class="projeckt-top-wrap">
+							<img class="projeckt-foto" src="./images/projeckt_examples/notebook.jpg" alt="Ноутбук" width="370">
+							<p class="projeckt-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+								сервисов.
+								Все это позволит
+								посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+						</div>
+						<div class="portfolio-wrapper">
+							<h3 class="projeckt-name">Growing Business</h3>
+							<p class="projeckt-description">Приложение</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<!--Футер-->
+
+	<footer class="footer">
+		<div class="container footer-container">
+			<div>
+				<a class="logo-web link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
+				<address class="adress">
+					<a class="adress link"
+						href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,475m/data=!3m1!1e3!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+						target="_blank">г. Киев, пр-т Леси Украинки, 26</a>
+					<a class="contacts link" href="mailto:info@example.com">info@example.com</a>
+					<a class="contacts link" href="tel:+380991111111">+38 099 111 11 11</a>
+				</address>
+			</div>
+			<div class="social-footer">
+				<h3 class="text-footer-sicial">ПРИСОЕДИНЯЙТЕСЬ</h3>
+				<ul class="social-list list">
+					<li class="social-item">
+						<a class="social-button-footer" href="">
+							<svg class="social-icon-footer" Width="20" Height="20">
+								<use href="./images/icons.svg#icon-instagram-2"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-item">
+						<a class="social-button-footer" href="">
+							<svg class="social-icon-footer" Width="20" Height="20">
+								<use href="./images/icons.svg#icon-twitter-1"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-item">
+						<a class="social-button-footer" href="">
+							<svg class="social-icon-footer" Width="20" Height="20">
+								<use href="./images/icons.svg#icon-facebook-1"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-item">
+						<a class="social-button-footer" href="">
+							<svg class="social-icon-footer" Width="20" Height="20">
+								<use href="./images/icons.svg#icon-linkedin-1"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="follow">
+				<h3 class="text-follow">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+				<form class="follow-form">
+					<input type="email" class="follow-input" name="E-mail" id="E-mail" placeholder="E-mail">
+					<label for="E-mail"></label>
+					<button class="button follow-button" type="submit">Подписаться
+						<svg class="icon-follow" Width="24" Height="24">
+							<use href="./images/icons.svg#icon-icon-send"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<script src="./js/modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+/* Соц сети */
+
+.social.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $--fill-icons;
+  transition: color $--timing-function,
+  background-color $--timing-function;
+	&:hover,
+  &:focus {
+  color: $--background;
+  background-color: $--navigation;
+}
+
+}
+
+
+.social-icon {
+  fill: currentColor;
+  transition: fill $--timing-function;
+	&:hover,
+  &:focus {
+  fill: $--background;
+}
+}
+

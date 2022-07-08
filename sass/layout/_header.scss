@@ -1,0 +1,26 @@
+/* Header */
+
+.header {
+  border-bottom: solid #ececec 1px;
+  .container {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  margin-left: 93px;
+  display: flex;
+}
+
+
+
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

@@ -1,0 +1,31 @@
+.hero {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 200px 0px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--acent);
+  text-align: center;
+	&:hover,
+  &:focus {
+  background-color: $--background-color-boton;
+}
+}
+
+.hero-text {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $--background;
+}
