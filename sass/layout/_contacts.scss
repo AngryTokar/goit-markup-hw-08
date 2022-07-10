@@ -2,10 +2,6 @@
 
 .contacts {
   margin-left: auto;
-  display: flex;
-  align-items: center;
-  // font-weight: 500;
-	font-weight: 400;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   color: $--text-regular;
@@ -14,5 +10,27 @@
   &:focus {
   color: $--navigation;
 }
+@media screen and (min-width: 1200px) {
+	display: flex;
+  align-items: center;
+}
+}
+
+.list.contacts{
+	@media screen and (min-width: 768px) {
+		padding: 21px 0px ;
+		}
+		@media screen and (min-width: 1200px) {
+			padding: 0;
+		}
+}
+
+.contacts-item:not(:last-child){
+	@media screen and (min-width: 768px) {
+    margin-bottom:  10px;
+  }
+	@media screen and (min-width: 1200px) {
+		margin: 0px 30px 0px 0px;
+	}
 }
 
