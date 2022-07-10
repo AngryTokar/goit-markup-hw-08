@@ -1,11 +1,15 @@
 /* Лого */
-.logo {
+.logo-web {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19em;
+	font-size:24px ;
+	line-height: 1.16em;
   letter-spacing: 0.03em;
   color: $--navigation;
+	@media screen and (min-width: 1200px) {
+    font-size: 26px;
+  line-height: 1.19em;
+}
 }
 
 .logo__header {

@@ -1,7 +1,7 @@
 .hero {
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 200px 0px;
+  padding: 118px 0px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -12,20 +12,31 @@
   background-size: cover;
   background-color: var(--acent);
   text-align: center;
-	&:hover,
+  &:hover,
   &:focus {
-  background-color: $--background-color-boton;
-}
+    background-color: $--background-color-boton;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0px;
+  }
 }
 
 .hero-text {
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 696px;
+  width: 100%px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36em;
+  font-size: 26px;
+  line-height: 1.61em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $--background;
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36em;
+  }
 }

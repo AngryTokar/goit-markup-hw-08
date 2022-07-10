@@ -1,32 +1,44 @@
 .client-text {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16em;
+  font-size: 28px;
+  line-height: 1.17em;
   text-align: center;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16em;
+  }
 }
 
 .client .list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .company-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   border: 1px solid $--fill-icons;
   border-radius: $--style-botton-radius;
   height: 92px;
   color: $--fill-icons;
   transition: color $--timing-function, border-color $--timing-function;
-	&:hover,
+  &:hover,
   &:focus {
-  color: $--navigation;
-  border-color: $--navigation;;
-}
+    color: $--navigation;
+    border-color: $--navigation;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 
 .logo-icon {
@@ -34,9 +46,8 @@
   height: 60px;
   fill: currentColor;
   transition: fill $--timing-function;
-	&:hover,
+  &:hover,
   &:focus {
-  fill:  $--navigation;;
+    fill: $--navigation;
+  }
 }
-}
-

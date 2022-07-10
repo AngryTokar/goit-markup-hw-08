@@ -1,26 +1,35 @@
 .projeckt-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+	@media screen and (min-width: 768px) {
+		margin-right: -30px;
+	}
 }
 
 .projeckt-link {
   position: relative;
-  flex-basis: calc((100% - 90px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-	transition:box-shadow $--timing-function;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  transition: box-shadow $--timing-function;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+		width: calc((100% - 90px) / 3);
+  }
   &:hover .projeckt-top-text,
   &:focus .projeckt-top-text {
-  transform: translateY(0);
-}
+    transform: translateY(0);
+  }
   &:hover,
   &:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
-}
-
 
 .projeckt-top-wrap {
   display: block;
@@ -30,8 +39,6 @@
 
 .portfolio-wrapper {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
 
 .projeckt-name {
