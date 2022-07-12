@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,14 +18,14 @@
 
 <body>
 	<!-- Хеадер -->
-	<!-- <header class="header">
+	<header class="header">
 		<div class="container header__container">
 			<nav class="header__nav">
-				<a class="logo link" href="./index.html">Web<span class="logo__header">Studio</span></a>
+				<a class="logo-web link" href="./index.html">Web<span class="logo__header">Studio</span></a>
 				<ul class="list header__list">
 					<li class="header__item"><a href="./index.html" class="link header-menu">Студия</a></li>
-					<li class="header__item"><a href="./portfolio.html" class="link header-menu current-link">Портфолио</a></li>
-					<li class="header__item"><a href="./index.html" class="link header-menu">Контакты</a></li>
+					<li class="header__item"><a href="./portfolio.html" class="link current-link header-menu">Портфолио</a></li>
+					<li class="header__item"><a href="#" class="link header-menu">Контакты</a></li>
 				</ul>
 			</nav>
 			<ul class="list contacts">
@@ -44,8 +44,55 @@
 					</a>
 				</li>
 			</ul>
+			<button class="header-menu-open__button" type="button" data-menu-open>
+				<svg class="header-menu-mobile__icon" Width="40" Height="40">
+					<use href="./images/icons.svg#icon-menu_40px"></use>
+				</svg>
+			</button>
 		</div>
-	</header> -->
+
+		<!-- Мобильное меню -->
+
+
+		<div class="header-mobile__menu is-hidden" data-menu>
+			<div class="header-mobile__container">
+				
+				<div class="mob__menu-top">
+					<button class="header-menu-close__button" type="button" data-menu-close>
+						<svg class="header-menu-mobile__icon" Width="40" Height="40">
+							<use href="./images/icons.svg#icon-close_40px"></use>
+						</svg>
+					</button>
+					<ul class="list header-menu__list-mobile">
+						<li class="header-menu__item-mobile"><a href="./index.html"
+								class="link header-menu__mobile">Студия</a>
+						</li>
+						<li class="header-menu__item-mobile"><a href="./portfolio.html"
+								class="link current-link header-menu__mobile">Портфолио</a>
+						</li>
+						<li class="header-menu__item-mobile"><a href="#" class="link header-menu__mobile">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="top__menu-bottom">
+					<ul class="list list-contacts__mobile">
+						<li class="contacts-item-mobile__tel">
+							<a class="link link__mobile-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+						</li>
+						<li class="contacts-item-mobile__post">
+							<a class="link link__mobile-post" href="mailto:info@example.com">info@example.com</a>
+						</li>
+					</ul>
+					<ul class="list mobile-soc__list">
+						<li class="mobile-soc__item"><a class="mobile-soc__link" href=""></a>Instagram</li>
+						<li class="mobile-soc__item"><a class="after mobile-soc__link" href=""></a>Twitter</li>
+						<li class="mobile-soc__item"><a class="after mobile-soc__link" href=""></a>Facebook</li>
+						<li class="mobile-soc__item"><a class="after mobile-soc__link" href=""></a>LinkedIn</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+	</header>
 	<!-- Мэин -->
 	<main class="portfolio-main">
 		<!-- Фильтр галереи -->
@@ -251,7 +298,7 @@
 			</div>
 		</div>
 	</footer>
-	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

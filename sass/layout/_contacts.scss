@@ -1,36 +1,39 @@
 /* Контакты */
 
 .contacts {
+  display: none;
   margin-left: auto;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   color: $--text-regular;
   transition: color $--timing-function;
-	&:hover,
+  &:hover,
   &:focus {
-  color: $--navigation;
-}
-@media screen and (min-width: 1200px) {
-	display: flex;
-  align-items: center;
-}
-}
-
-.list.contacts{
-	@media screen and (min-width: 768px) {
-		padding: 21px 0px ;
-		}
-		@media screen and (min-width: 1200px) {
-			padding: 0;
-		}
-}
-
-.contacts-item:not(:last-child){
-	@media screen and (min-width: 768px) {
-    margin-bottom:  10px;
+    color: $--navigation;
   }
-	@media screen and (min-width: 1200px) {
-		margin: 0px 30px 0px 0px;
-	}
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
+.list.contacts {
+  @media screen and (min-width: 768px) {
+    padding: 21px 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
+}
+
+.contacts-item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0px 30px 0px 0px;
+  }
+}

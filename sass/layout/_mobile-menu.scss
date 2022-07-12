@@ -1,0 +1,122 @@
+// Мобильное меню
+
+.header-mobile__container {
+  max-width: 480px;
+  margin: 0px auto;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.header-mobile__menu {
+	z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $--background;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity $--timing-function, visibility$--timing-function;
+}
+
+.header-menu-open__button,
+.header-menu-close__button {
+  display: block;
+  margin-left: auto;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: $--navigation;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header-menu-mobile__icon {
+  fill: currentColor;
+  transition: fill $--timing-function;
+}
+
+.header-menu__list-mobile {
+  margin-bottom: 100px;
+}
+
+.header-menu__item-mobile:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.link.header-menu__mobile {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17em;
+  letter-spacing: 0.02em;
+}
+
+.current-link.header-menu__mobile {
+  color: $--navigation;
+}
+
+.list-contacts__mobile {
+  margin-bottom: 64px;
+}
+
+.contacts-item-mobile__tel {
+  margin-bottom: 32px;
+  color: $--navigation;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.22em;
+  letter-spacing: 0.02em;
+}
+
+.contacts-item-mobile__post {
+  color: $--text-regular;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.22em;
+  letter-spacing: 0.02em;
+}
+
+.mobile-soc__list {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-soc__item {
+  color: $--navigation;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.mobile-soc__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22em;
+  letter-spacing: 0.02em;
+}
+
+.after.mobile-soc__link::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  display: block;
+  width: 22px;
+  height: 1px;
+  color: rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}

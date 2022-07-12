@@ -9,7 +9,8 @@
   }
 }
 
-.header-menu.current-link {
+.header-menu.current-link,
+.header-menu-mobile.current-link {
   color: $--navigation;
 }
 
@@ -36,6 +37,7 @@
 }
 
 .header-menu {
+	display: none;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -44,5 +46,8 @@
   &:hover,
   &:focus {
     color: $--navigation;
+  }
+	@media screen and (min-width: 768px) {
+    display: block;
   }
 }

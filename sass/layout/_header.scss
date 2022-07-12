@@ -3,24 +3,34 @@
 .header {
   border-bottom: solid #ececec 1px;
   .container {
-		// height: 60px;
-		display: flex;
-		align-items: center;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+    }
+  }
 }
-}
-
 
 .header__nav {
-	width: 320px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    width: 320px;
+  }
 }
 
 .header__list {
+  display: none;
   margin-left: 93px;
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
-
 
 .contacts__icon {
   fill: currentColor;
