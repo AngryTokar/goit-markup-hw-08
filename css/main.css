@@ -196,9 +196,7 @@ img {
 .header-mobile__container {
   max-width: 480px;
   margin: 0px auto;
-  padding-left: 40px;
-  padding-top: 10px;
-  padding-bottom: 48px;
+  padding: 10px 10px 48px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
