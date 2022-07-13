@@ -16,7 +16,7 @@
 	<title>WebStudio</title>
 </head>
 
-<body>
+<body class="no-scroll">
 
 	<!-- Хеадер -->
 	<header class="header">
@@ -92,7 +92,6 @@
 				</div>
 			</div>
 		</div>
-		</div>
 	</header>
 	<!-- Мэин -->
 	<main>
@@ -160,7 +159,12 @@
 				<ul class="chapter-list list">
 					<li class="chapter-item">
 						<div class="chapter-foto">
-							<img src="./images/our_works/img.jpg" alt="Блок-схема. Руки печатают на клавиатуре" width="370" />
+							<picture>
+								<source srcset="./images/our_works/img.jpg 1x,
+							./images/our_works/img_2x.jpg 2x
+							" media="(min-width: 1200px)" />
+								<img src="./images/our_works/img.jpg" alt="Блок-схема. Руки печатают на клавиатуре" width="370" />
+							</picture>
 							<div class="chapter-overlal">
 								<h3 class="overlay-text">Десктопные приложения</h3>
 							</div>
@@ -168,8 +172,13 @@
 					</li>
 					<li class="chapter-item">
 						<div class="chapter-foto">
-							<img src="./images/our_works/img_(1).jpg"
-								alt="Телефон в руках перед ноутбуком,на экране которого фотографии экрана телефона" width="370" />
+							<picture>
+								<source srcset="./images/our_works/img_(1).jpg 1x,
+							./images/our_works/img_(1)_2x.jpg 2x
+							" media="(min-width: 1200px)" />
+								<img src="./images/our_works/img_(1).jpg"
+									alt="Телефон в руках перед ноутбуком,на экране которого фотографии экрана телефона" width="370" />
+							</picture>
 							<div class="chapter-overlal">
 								<h3 class="overlay-text">Мобильные приложения</h3>
 							</div>
@@ -177,8 +186,13 @@
 					</li>
 					<li class="chapter-item">
 						<div class="chapter-foto">
-							<img src="./images/our_works/img_(2).jpg" alt="Планшет в левой руке. На экране планета палитра цветов."
-								width="370" />
+							<picture>
+								<source srcset="./images/our_works/img_(2).jpg 1x,
+							./images/our_works/img_(2)_2x.jpg 2x
+							" media="(min-width: 1200px)" />
+								<img src="./images/our_works/img_(2).jpg" alt="Планшет в левой руке. На экране планета палитра цветов."
+									width="370" />
+							</picture>
 							<div class="chapter-overlal">
 								<h3 class="overlay-text">Дизайнерские решения</h3>
 							</div>
@@ -193,8 +207,19 @@
 				<h2 class="chapter-team">Наша команда</h2>
 				<ul class="team list">
 					<li class="team-item">
-						<img class="team-photo" src="./images/our_team/ihor_demyanenko.jpg"
-							alt="Белый мужчина в очках с бородой и в коричневой рубашке улыбается" width="270" />
+						<picture>
+							<source srcset="./images/our_team/ihor_demyanenko.jpg 1x,
+							./images/our_team/ihor_demyanenko_2x.jpg 2x
+						" media="(min-width: 1200px)" />
+							<source srcset="./images/our_team/ihor_demyanenko_tab.jpg 1x,
+							./images/our_team/ihor_demyanenko_tab_2x.jpg 2x
+						" media="(min-width: 768px)" />
+							<source srcset="./images/our_team/ihor_demyanenko_mob.jpg 1x,
+							./images/our_team/ihor_demyanenko_mob_2x.jpg 2x
+						" media="(min-width: 320px)" />
+							<img class="team-photo" src="./images/our_team/ihor_demyanenko.jpg"
+								alt="Белый мужчина в очках с бородой и в коричневой рубашке улыбается" width="270" />
+						</picture>
 						<div class="team-wrapper">
 							<h3 class="team-member">Игорь Демьяненко</h3>
 							<p class="work-name">Product Designer</p>
@@ -231,8 +256,19 @@
 						</div>
 					</li>
 					<li class="team-item">
-						<img class="team-photo" src="./images/our_team/olha_repina.jpg"
-							alt="Белая женщина в очках, с длинными волосами в сером пиджаке, улыбается" width="270" />
+						<picture>
+							<source srcset="./images/our_team/olha_repina.jpg 1x,
+							./images/our_team/olha_repina_2x.jpg 2x
+						" media="(min-width: 1200px)" />
+							<source srcset="./images/our_team/olha_repina_tab.jpg 1x,
+							./images/our_team/olha_repina_tab_2x.jpg 2x
+						" media="(min-width: 768px)" />
+							<source srcset="./images/our_team/olha_repina_mob.jpg 1x,
+							./images/our_team/olha_repina_mob_2x.jpg 2x
+						" media="(min-width: 320px)" />
+							<img class="team-photo" src="./images/our_team/olha_repina.jpg"
+								alt="Белая женщина в очках, с длинными волосами в сером пиджаке, улыбается" width="270" />
+						</picture>
 						<div class="team-wrapper">
 							<h3 class="team-member">Ольга Репина</h3>
 							<p class="work-name">Frontend Developer</p>
@@ -269,8 +305,19 @@
 						</div>
 					</li>
 					<li class="team-item">
-						<img class="team-photo" src="./images/our_team/nikolai_tarasov.jpg"
-							alt="Белый мужчина в светло-голубой рубашке улыбается" width="270" />
+						<picture>
+							<source srcset="./images/our_team/nikolai_tarasov.jpg 1x,
+							./images/our_team/ihor_demyanenko_2x.jpg 2x
+						" media="(min-width: 1200px)" />
+							<source srcset="./images/our_team/nikolai_tarasov_tab.jpg 1x,
+							./images/our_team/ihor_demyanenko_tab_2x.jpg 2x
+						" media="(min-width: 768px)" />
+							<source srcset="./images/our_team/nikolai_tarasov_mob.jpg 1x,
+							./images/our_team/ihor_demyanenko_mob_2x.jpg 2x
+						" media="(min-width: 320px)" />
+							<img class="team-photo" src="./images/our_team/nikolai_tarasov.jpg"
+								alt="Белый мужчина в светло-голубой рубашке улыбается" width="270" />
+						</picture>
 						<div class="team-wrapper">
 							<h3 class="team-member">Николай Тарасов</h3>
 							<p class="work-name">Marketing</p>
@@ -307,8 +354,19 @@
 						</div>
 					</li>
 					<li class="team-item">
-						<img class="team-photo" src="./images/our_team/mikhail_ermakov.jpg"
-							alt="Белый мужчина в очках и черной футболке" width="270" />
+						<picture>
+							<source srcset="./images/our_team/mikhail_ermakov.jpg 1x,
+							./images/our_team/mikhail_ermakov_2x.jpg 2x
+						" media="(min-width: 1200px)" />
+							<source srcset="./images/our_team/mikhail_ermakov_tab.jpg 1x,
+							./images/our_team/mikhail_ermakov_tab_2x.jpg 2x
+						" media="(min-width: 768px)" />
+							<source srcset="./images/our_team/mikhail_ermakov_mob.jpg 1x,
+							./images/our_team/mikhail_ermakov_mob_2x.jpg 2x
+						" media="(min-width: 320px)" />
+							<img class="team-photo" src="./images/our_team/mikhail_ermakov.jpg"
+								alt="Белый мужчина в очках и черной футболке" width="270" />
+						</picture>
 						<div class="team-wrapper">
 							<h3 class="team-member">Михаил Ермаков</h3>
 							<p class="work-name">UI Designer</p>
