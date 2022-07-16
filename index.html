@@ -29,17 +29,17 @@
 					<li class="header__item"><a href="#" class="link header-menu">Контакты</a></li>
 				</ul>
 			</nav>
-			<ul class="list contacts">
+			<ul class="list contacts__list">
 				<li class="contacts-item">
-					<a class="header contacts link" href="mailto:info@example.com">
-						<svg class="contacts__icon" Width="16" Height="12">
+					<a class="top contacts-link link" href="mailto:info@example.com">
+						<svg class="contacts__icon post" Width="16" Height="12">
 							<use href="./images/icons.svg#icon-envelope"></use>
 						</svg>info@example.com
 					</a>
 				</li>
 				<li class="contacts-item">
-					<a class="header contacts link" href="tel:+380991111111">
-						<svg class="contacts__icon" Width="10" Height="16">
+					<a class="top contacts-link link" href="tel:+380991111111">
+						<svg class="contacts__icon tel" Width="10" Height="16">
 							<use href="./images/icons.svg#icon-smartphone"></use>
 						</svg>+38 099 111 11 11
 					</a>
@@ -84,10 +84,10 @@
 						</li>
 					</ul>
 					<ul class="list mobile-soc__list">
-						<li class="mobile-soc__item"><a class="mobile-soc__link" href=""></a>Instagram</li>
-						<li class="mobile-soc__item"><a class="after mobile-soc__link" href=""></a>Twitter</li>
-						<li class="mobile-soc__item"><a class="after mobile-soc__link" href=""></a>Facebook</li>
-						<li class="mobile-soc__item"><a class="after mobile-soc__link" href=""></a>LinkedIn</li>
+						<li class="mobile-soc__item"><a class="mobile-soc__link" href="">Instagram</a></li>
+						<li class="mobile-soc__item"><a class="mobile-soc__link" href="">Twitter</a></li>
+						<li class="mobile-soc__item"><a class="mobile-soc__link" href="">Facebook</a></li>
+						<li class="mobile-soc__item"><a class="mobile-soc__link" href="">LinkedIn</a></li>
 					</ul>
 				</div>
 			</div>
@@ -113,7 +113,7 @@
 								<use href="./images/icons.svg#icon-antenna-1"></use>
 							</svg>
 						</div>
-						<h3 class="benefits__list">Внимание к деталям</h3>
+						<h3 class="benefits__title">Внимание к деталям</h3>
 						<p class="benefits__text">Идейные соображения, а также начало повседневной работы
 							по формированию позиции.
 						</p>
@@ -124,7 +124,7 @@
 								<use href="./images/icons.svg#icon-clock-1"></use>
 							</svg>
 						</div>
-						<h3 class="benefits__list">Пунктуальность</h3>
+						<h3 class="benefits__title">Пунктуальность</h3>
 						<p class="benefits__text">
 							Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 						</p>
@@ -135,7 +135,7 @@
 								<use href="./images/icons.svg#icon-diagram-1"></use>
 							</svg>
 						</div>
-						<h3 class="benefits__list">Планирование</h3>
+						<h3 class="benefits__title">Планирование</h3>
 						<p class="benefits__text">
 							Равным образом консультация с широким активом в значительной степени обуславливает.
 						</p>
@@ -146,7 +146,7 @@
 								<use href="./images/icons.svg#icon-astronaut-1"></use>
 							</svg>
 						</div>
-						<h3 class="benefits__list">Современные технологии</h3>
+						<h3 class="benefits__title">Современные технологии</h3>
 						<p class="benefits__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 					</li>
 				</ul>
@@ -307,13 +307,13 @@
 					<li class="team-item">
 						<picture>
 							<source srcset="./images/our_team/nikolai_tarasov.jpg 1x,
-							./images/our_team/ihor_demyanenko_2x.jpg 2x
+							./images/our_team/nikolai_tarasov_2x.jpg 2x
 						" media="(min-width: 1200px)" />
 							<source srcset="./images/our_team/nikolai_tarasov_tab.jpg 1x,
-							./images/our_team/ihor_demyanenko_tab_2x.jpg 2x
+							./images/our_team/nikolai_tarasov_tab_2x.jpg 2x
 						" media="(min-width: 768px)" />
 							<source srcset="./images/our_team/nikolai_tarasov_mob.jpg 1x,
-							./images/our_team/ihor_demyanenko_mob_2x.jpg 2x
+							./images/our_team/nikolai_tarasov_mob_2x.jpg 2x
 						" media="(min-width: 320px)" />
 							<img class="team-photo" src="./images/our_team/nikolai_tarasov.jpg"
 								alt="Белый мужчина в светло-голубой рубашке улыбается" width="270" />
@@ -540,7 +540,7 @@
 					<input class="checkbox" type="checkbox" name="user-policy" id="policy">
 					<label class="policy-label" for="policy">
 						<span>
-							<svg class="icon-check" Width="11" Height="8">
+							<svg class="icon-check" Width="16" Height="15">
 								<use href="./images/icons.svg#icon-icon-check"></use>
 							</svg>
 						</span>Соглашаюсь с рассылкой и принимаю <a class="policy-text" href="">Условия договора</a></label>

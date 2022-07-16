@@ -2,15 +2,18 @@
 
 .header {
   border-bottom: solid #ececec 1px;
+  padding: 10px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
   .container {
-    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    @media screen and (min-width: 768px) {
-      padding: 0;
-    }
   }
+}
+
+.header__container {
+  width: 100%;
 }
 
 .header__nav {
@@ -20,7 +23,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    width: 320px;
   }
 }
 
@@ -29,10 +31,38 @@
   margin-left: 93px;
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-left: 88px;
+  }
+}
+
+.contacts__list {
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+  display: flex;
   }
 }
 
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+  &post {
+    width: 14px;
+    height: 10px;
+  }
+  &tel {
+    width: 10px;
+    height: 14px;
+  }
+	@media screen and (min-width: 768px) {
+    &post {
+			width: 16px;
+			height: 12px;
+		}
+		&tel {
+			width: 10px;
+			height: 16px;
+		}
+  }
 }

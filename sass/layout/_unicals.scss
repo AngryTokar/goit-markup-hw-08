@@ -1,7 +1,6 @@
 /* Наши преимущества */
 
 .list.benefits__list {
-  width: 100%;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +18,6 @@
 }
 
 .benefits__icon-wrapper {
-  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   display: flex;
@@ -30,14 +28,15 @@
 }
 
 .benefits__item {
-  width: 100%;
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
+	&:not(:last-child){
+		margin-bottom: 30px;
+	}
 }
 
-.benefits__list {
-  width: 100%;
+.benefits__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -51,7 +50,6 @@
 }
 
 .benefits__text {
-  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71em;

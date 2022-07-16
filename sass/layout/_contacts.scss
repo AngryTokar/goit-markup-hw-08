@@ -1,8 +1,8 @@
 /* Контакты */
 
-.contacts {
+.contacts-link {
   display: none;
-  margin-left: auto;
+	font-size: 12px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
   color: $--text-regular;
@@ -12,20 +12,11 @@
     color: $--navigation;
   }
   @media screen and (min-width: 768px) {
-    display: block;
-  }
-  @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: center;
+	  align-items: center;
   }
-}
-
-.list.contacts {
-  @media screen and (min-width: 768px) {
-    padding: 21px 0px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding: 0;
+	@media screen and (min-width: 768px) {
+  font-size: 14px;
   }
 }
 
